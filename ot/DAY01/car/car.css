@@ -1,0 +1,23 @@
+.car {
+  display: flex;
+}
+.info {
+  width: 610px;
+
+  font-size: 60px;
+  margin-right: 50px;
+}
+.image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+.button {
+  text-align: center;
+  color: red;
+  background-color: rgb(248, 232, 232);
+  border: none;
+  border-radius: 60px;
+  font-size: 30px;
+  padding: 15px 180px 15px 180px;
+}
