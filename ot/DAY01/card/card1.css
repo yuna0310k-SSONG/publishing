@@ -1,0 +1,16 @@
+.aespa {
+  display: flex;
+}
+.story {
+  width: 100px;
+  text-align: center;
+  margin-right: 30px;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+  padding: 3px;
+  border: 2px solid rgb(255, 179, 255);
+}
