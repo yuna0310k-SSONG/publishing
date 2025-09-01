@@ -1,0 +1,30 @@
+.Facebook {
+  color: white;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px 15px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.google {
+  color: rgb(110, 109, 109);
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+  padding: 15px 32px 15px 32px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.apple {
+  color: white;
+  background-color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px 15px 32px;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* font size defult : 16px*/
