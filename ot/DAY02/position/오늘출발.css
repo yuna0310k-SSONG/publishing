@@ -1,0 +1,17 @@
+.photo {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+}
+.photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.today {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}

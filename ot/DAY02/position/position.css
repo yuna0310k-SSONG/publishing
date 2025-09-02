@@ -1,0 +1,32 @@
+.box {
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid red;
+}
+.minibox {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  position: relative;
+  z-index: 1;
+  /* static : 기본값 */
+  /* relative(상대적) : 제자리에서 움직이도록 함 */
+  /* absolute(절대적) : 부모의 relative를 시준으로 삼아서 움직임*/
+  /* 없으면 최종부모가 브라우저가 됨 */
+}
+.minibox1 {
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+  position: relative;
+  bottom: 50px;
+  z-index: 2;
+}
+.minibox2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 199, 14);
+  position: relative;
+  bottom: 100px;
+  z-index: 3;
+}
