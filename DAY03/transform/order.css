@@ -1,0 +1,15 @@
+button {
+  color: white;
+  background-color: #00a5b9;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.4s;
+}
+
+button:hover {
+  background-color: #008d9f;
+}
+button > i {
+  color: yellow;
+}
