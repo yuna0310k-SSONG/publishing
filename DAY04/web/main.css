@@ -1,0 +1,8 @@
+section {
+  height: 100vh;
+}
+.first {
+  background-image: url("flower.avif");
+  background-size: cover;
+  background-position: 50% 60%;
+}
