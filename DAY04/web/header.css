@@ -20,7 +20,13 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.links > button {
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5;
+}
+
+.links > li {
   border: none;
   border-radius: 30px;
   padding: 11px 16px;
@@ -28,8 +34,8 @@ nav {
   font-weight: 600;
   cursor: pointer;
 }
-.links > button:hover {
-  background-color: #eee;
+.links > li:hover {
+  background-color: #dedede5e;
 }
 .ably {
   color: #ff5160;
