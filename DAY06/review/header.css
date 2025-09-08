@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background-color: white;
+}
+header > .inner {
+  max-width: 1180px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .inner > a {
+  color: #444444;
+  font-weight: 700;
+  font-size: 24px;
+}
+header > .inner > .buttons {
+  display: flex;
+  flex-direction: row;
+}
+header > .inner > .buttons > li {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+header > .inner > .buttons > li:hover {
+  background-color: #555555c5;
+  color: white;
+}
+border: 1px solid red;

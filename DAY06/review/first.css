@@ -1,0 +1,55 @@
+.first {
+  width: 100%;
+  height: 85vh;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+}
+.first > video {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  z-index: 1;
+}
+.first > div {
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+}
+.first > div > h1 {
+  color: white;
+  font-size: 120px;
+}
+.first > div > span {
+  color: rgba(255, 255, 255, 0.425);
+  margin-top: 30;
+}
+.first > div > button {
+  margin-top: 80px;
+  padding: 5px 50px;
+
+  margin-right: 700px;
+  color: white;
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+
+  transition: all 0.5s;
+}
+.first > div > button:hover {
+  background-color: white;
+  color: black;
+}
+background-image: url(black.PNG);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
