@@ -1,0 +1,19 @@
+.home {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(../image/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 567px) {
+  .home {
+    width: 567px;
+    height: 800px;
+    background-image: url(../image/main\(m\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

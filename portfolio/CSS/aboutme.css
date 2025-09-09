@@ -1,0 +1,114 @@
+.aboutme {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+.aboutme > .aboutme__title {
+  padding: 0 30px;
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.aboutme > .aboutme__title > .title-main {
+  font-family: "GodoRounded";
+  font-weight: 500;
+  font-size: 80px;
+
+  color: #dfaf9f;
+  text-shadow: 7px 9px 8px rgba(255, 241, 118, 0.71);
+}
+.aboutme > .aboutme__title > .title-sub {
+  font-family: "GodoRounded";
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #dfaf9f;
+
+  padding-left: 20px;
+  border-left: 3px solid #dfaf9f;
+}
+.aboutme > .aboutme__contents {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.aboutme > .aboutme__contents > .contents__tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 380px;
+  height: 180px;
+
+  margin: 100px auto;
+  padding: 10px 10px;
+
+  cursor: pointer;
+}
+.aboutme > .aboutme__contents > .contents__tags > .tag-icon {
+  font-size: 40px;
+  color: #6b6b6b;
+  font-family: "GodoRounded";
+  transition: all 0.7s;
+}
+.aboutme > .aboutme__contents > .contents__tags:hover > .tag-icon {
+  transform: rotate(15deg);
+}
+
+.aboutme > .aboutme__contents > .contents__tags > .tags-main {
+  font-size: 40px;
+  color: #6b6b6b;
+  font-family: "GodoRounded";
+}
+.aboutme > .aboutme__contents > .contents__tags > .tags-sub {
+  font-size: 20px;
+  color: #6b6b6b;
+  font-family: "GodoRounded";
+}
+@media screen and (max-width: 567px) {
+  .aboutme > .aboutme__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutme > .aboutme__title > .title-main {
+    padding-bottom: 10px;
+  }
+  .aboutme > .aboutme__title > .title-sub {
+    font-family: "GodoRounded";
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #dfaf9f;
+
+    border-top: 2px solid #dfaf9f;
+    border-left: none;
+  }
+  .aboutme > .aboutme__contents {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .aboutme > .aboutme__contents > .contents__tags {
+    width: 380px;
+    height: 180px;
+
+    padding: 10px 10px;
+    margin: 30px 0px;
+    cursor: pointer;
+  }
+}
