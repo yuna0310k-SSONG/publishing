@@ -37,17 +37,15 @@
   align-items: center;
 
   transition: all 1s;
+  position: relative;
+  overflow: hidden;
 }
 .work > .work__projects > .project > .project-comming {
   color: white;
   font-family: "GodoRounded";
   font-size: 24px;
 }
-.work > .work__projects > .project:hover {
-  cursor: pointer;
-  animation-name: wobble-hor-bottom;
-  animation-duration: 0.8s;
-}
+
 .work > .work__projects > .project > .project-done {
   border-radius: 30px;
 
@@ -56,14 +54,31 @@
   align-items: center;
 }
 
-.work > .work__projects > .project > .project-done > img {
+.work > .work__projects > .project > .project-done > .screen {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 60%;
   height: 60%;
-
-  object-fit: cover;
 }
-
-@media screen and (max-width: 567px) {
+.work > .work__projects > .project > .project-done > .screen > img {
+  width: 150%;
+  height: 160%;
+  transform: translate(0, -150%);
+  transition: all 0.5s;
+}
+.work > .work__projects > .project > .project-done:hover > .screen > img {
+  object-fit: cover;
+  cursor: pointer;
+  transform: translate(0, 0%);
+}
+@media screen and (max-width: 768px) {
+  .work {
+    max-width: 360px;
+  }
   .work > .work__tittle {
     display: flex;
     flex-direction: column;
@@ -87,6 +102,7 @@
   }
   .work > .work__projects > .project > .project-comming {
     font-size: 18px;
+    font-family: "GodoRounded";
   }
 }
 

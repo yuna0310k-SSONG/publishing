@@ -1,0 +1,77 @@
+.heydealer {
+  width: 100%;
+
+  position: fixed;
+  top: 0%;
+  left: 0px;
+
+  z-index: 999;
+
+  background-color: rgba(255, 255, 255, 0.432);
+}
+.heydealer > .heydealer__inner {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0px auto;
+  padding: 5px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.heydealer > .heydealer__inner > .inner-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 70px;
+}
+.heydealer > .heydealer__inner > .inner-link > .link {
+  font-size: 20px;
+  font-weight: 300;
+
+  padding: 18px 10px;
+
+  position: relative;
+}
+.heydealer > .heydealer__inner > .inner-link > .link:hover {
+  background-color: rgba(184, 184, 189, 0.144);
+  border-radius: 8px;
+}
+
+.heydealer > .heydealer__inner > .inner-link > .link > div > .NEW {
+  width: 12px;
+  height: 12px;
+
+  /*글자*/
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  background-color: blue;
+  border-radius: 999px;
+
+  /*글자 가운데 정렬*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*NEW 위치 설정*/
+  position: absolute;
+  right: 3px;
+  top: 5px;
+}
+.heydealer > .heydealer__inner > i {
+  display: none;
+}
+
+@media screen and (max-width: 1040px) {
+  .heydealer > .heydealer__inner > i {
+    display: block;
+    margin: 30px;
+  }
+  .heydealer > .heydealer__inner > .inner-link {
+    display: none;
+  }
+}

@@ -1,0 +1,92 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 4% 0px 0px 0px;
+
+  overflow: hidden;
+}
+.main > .main__webvideo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  position: absolute; /* 비디오 위에 올리기 */
+  top: 0%; /* 세로 중앙 */
+  left: 0%; /* 가로 중앙 */
+  /* 정확히 가운데 정렬 */
+  z-index: 1;
+}
+.main > .main__mobilevideo {
+  display: none;
+}
+.main > .main__contents > .main__image {
+  width: 100%;
+  max-width: 1000px;
+
+  position: absolute; /* 비디오 위에 올리기 */
+  top: 0%; /* 세로 중앙 */
+  left: 12%; /* 가로 중앙 */
+  /* 정확히 가운데 정렬 */
+  z-index: 5;
+  margin: 100px auto;
+}
+.main > .main__contents > .main__image {
+  width: 700px;
+  height: 800px;
+  object-fit: cover;
+}
+.main > .main__contents > .main__button {
+  position: absolute; /* 비디오 위에 올리기 */
+  z-index: 10;
+  left: 24%; /* 가로 중앙 */
+  margin-top: 800px;
+}
+
+.main > .main__contents > .main__button > button {
+  width: 150px;
+  height: 45px;
+
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.315);
+}
+.main > .main__contents > .main__button > button:hover {
+  border: 1px solid white;
+}
+.main > .main__contents > .main__button > button > img {
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1040px) {
+  .main > .main__mobilevideo {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    margin-top: 14%;
+
+    object-fit: cover;
+
+    position: absolute; /* 비디오 위에 올리기 */
+    top: 0%; /* 세로 중앙 */
+    left: 0%; /* 가로 중앙 */
+    /* 정확히 가운데 정렬 */
+    z-index: 1;
+  }
+  .main > .main__webvideo {
+    display: none;
+  }
+  .main > .main__contents > .main__button {
+    display: none;
+  }
+  .main > .main__contents > .main__image {
+    width: 80%;
+    top: -15%;
+    left: -110px; /* 가로 중앙 */
+  }
+  .main > .main__contents > .main__button > button > img {
+  }
+}

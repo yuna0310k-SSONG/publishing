@@ -9,7 +9,7 @@
 }
 @media screen and (max-width: 567px) {
   .home {
-    width: 567px;
+    max-width: 567px;
     height: 800px;
     background-image: url(../image/main\(m\).jpg);
     background-repeat: no-repeat;
