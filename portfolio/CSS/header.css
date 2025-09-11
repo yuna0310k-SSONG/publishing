@@ -1,21 +1,23 @@
 .portfolio {
+  position: relative;
   width: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
 
+  z-index: 999;
   background-color: rgba(255, 255, 255, 0.733);
 }
 .portfolio > .portfolio__header {
   width: 100%;
   max-width: 1100px;
-
   margin: 0 auto;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+
+  z-index: 999;
 }
 .portfolio > .portfolio__header > .portfolio__name > .name-logo {
   width: 200px;

@@ -19,8 +19,7 @@
 }
 .goodprice > .goodprice__contents > .contents-image {
   width: 400px;
-  height: 600px;
-
+  height: 560px;
   object-fit: contain;
 }
 
@@ -34,7 +33,7 @@
   font-weight: 700;
   line-height: 65px;
 
-  margin-top: 80px;
+  margin-top: 30px;
 }
 .goodprice > .goodprice__contents > .contents-text > .text-sub1 {
   font-size: 20px;
@@ -47,4 +46,53 @@
   color: rgba(78, 78, 78, 0.425);
 
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .goodprice {
+    width: 100%;
+    height: 100%;
+  }
+
+  .goodprice > .goodprice__contents {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: self-start;
+
+    height: 80vh;
+
+    position: relative;
+
+    overflow: hidden;
+  }
+  .goodprice > .goodprice__contents > .contents-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .goodprice > .goodprice__contents > .contents-text > .text-title {
+    font-size: 30px;
+    line-height: 45px;
+
+    margin-top: 20px 0px;
+  }
+  .goodprice > .goodprice__contents > .contents-text > .text-sub1 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .goodprice > .goodprice__contents > .contents-text > .text-sub2 {
+    font-size: 8px;
+    margin-top: 8px;
+  }
+  .goodprice > .goodprice__contents > .contents-image {
+    margin-top: 50px;
+
+    object-fit: contain;
+    position: absolute;
+
+    left: -20px;
+    top: 160px;
+    background-color: #f7f8fb;
+  }
 }

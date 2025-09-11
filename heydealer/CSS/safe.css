@@ -1,0 +1,108 @@
+.safe {
+  width: 100%;
+  height: 100%;
+}
+.safe > .safe__contents {
+  padding: 10% 0% 10% 0px;
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.safe > .safe__contents > .safe__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+
+  margin-top: 20px 0px;
+}
+.safe > .safe__contents > .safe_boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 64px;
+  gap: 30px;
+}
+.safe > .safe__contents > .safe_boxes > .boxes-info {
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+
+  box-shadow: 10px 18px 5px 4px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 10px 18px 5px 4px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 10px 18px 5px 4px rgba(0, 0, 0, 0.31);
+}
+.safe > .safe__contents > .safe_boxes > .boxes-info > .info-whitetitle {
+  color: white;
+
+  margin: 50px 0px 0px 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.safe > .safe__contents > .safe_boxes > .boxes-info > .info-whitesub {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 15px;
+  line-height: 15px;
+  color: rgba(230, 227, 227, 0.829);
+}
+.safe > .safe__contents > .safe_boxes > .boxes-info > .info-greytitle {
+  color: #272e40;
+
+  margin: 50px 0px 0px 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.safe > .safe__contents > .safe_boxes > .boxes-info > .info-greysub {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 15px;
+  line-height: 15px;
+  color: #272e40;
+}
+.safe > .safe__contents > .safe_boxes > .boxes-info > img {
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  margin: 20px auto;
+}
+.safe > .safe__contents > .safe_boxes > .first {
+  background-color: #272e40;
+}
+.safe > .safe__contents > .safe_boxes > .second {
+  background-color: #869ab7;
+}
+.safe > .safe__contents > .safe_boxes > .third {
+  background-color: #e9edf4;
+}
+@media screen and (max-width: 1000px) {
+  .safe {
+    width: 100%;
+    height: 100%;
+  }
+  .safe > .safe__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  .safe > .safe__contents > .safe__title {
+    font-size: 30px;
+    line-height: 45px;
+
+    text-align: start;
+  }
+}

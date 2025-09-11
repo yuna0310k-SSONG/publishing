@@ -32,3 +32,43 @@
   object-fit: contain;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 768px) {
+  .zero {
+    width: 100%;
+
+    background-color: rgb(233, 237, 243);
+    overflow: hidden;
+  }
+  .zero > .zero_content {
+    max-width: none; /* 1000px 제한 없앰 */
+    width: 100%; /* 화면 꽉 차게 */
+    margin: 0; /* auto 제거해서 좌우 여백 없앰 */
+    padding: 0 10px; /* 글씨가 화면 끝에 붙는 게 싫으면 살짝 여백 */
+  }
+  .zero > .zero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 50px 30px 30px 10px;
+  }
+  .zero > .zero__content > .content-title {
+    text-align: start;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .zero > .zero__content > .content-span {
+    text-align: start;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .zero > .zero__content > video {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+}

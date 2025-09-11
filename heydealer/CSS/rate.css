@@ -25,7 +25,7 @@
   font-weight: 700;
   line-height: 65px;
 
-  margin-top: 80px;
+  margin-top: 75px;
 }
 .rate > .rate__contents > .contents-text > .text-sub {
   font-size: 20px;
@@ -35,7 +35,46 @@
 }
 .rate > .rate__contents > .contents-image > img {
   width: 400px;
-  height: 600px;
+  height: 560px;
 
   object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .rate {
+    width: 100%;
+    height: 100%;
+  }
+  .rate > .rate__contents {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    padding-top: 0px;
+    padding-left: 10px;
+    margin: 0px;
+
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  .rate > .rate__contents > .contents-text > .text-title {
+    font-size: 30px;
+    line-height: 45px;
+
+    margin-top: 30px;
+  }
+  .rate > .rate__contents > .contents-text > .text-sub {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .rate > .rate__contents > .contents-image > img {
+    margin-top: 50px;
+
+    object-fit: contain;
+    position: absolute;
+
+    left: -20px;
+    top: 150px;
+  }
 }
