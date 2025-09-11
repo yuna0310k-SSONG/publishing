@@ -55,7 +55,7 @@
 @media screen and (max-width: 567px) {
   .portfolio > .portfolio__header {
     width: 100%;
-    max-width: 567px;
+    margin: 0px 0px;
   }
   .name-log {
     width: 10px;
@@ -66,6 +66,16 @@
     display: block;
     color: #dfaf9f;
     margin-right: 120px;
+    text-align: end;
+
+    position: absolute;
+    left: 90%;
+    top: 70px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .portfolio > .portfolio__header > .portfolio__links {
     display: none;
